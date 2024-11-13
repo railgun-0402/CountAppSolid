@@ -9,6 +9,15 @@ Reactと似ているが、パフォーマンスが高いと言われているの
 
 興味がてらアプリを作成していき、理解を深める第一歩としたい。
 
+## Home
+作成すると以下のようなWelcome画面が！
+（これも見てみたかった・・・笑）
+
+
+![スクリーンショット 2024-11-14 1 17 14](https://github.com/user-attachments/assets/c14b9a4b-4b69-4669-b42c-dd58b4b08d30)
+
+
+
 ## Usage
 
 Those templates dependencies are maintained via [pnpm](https://pnpm.io) via `pnpm up -Lri`.
