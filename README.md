@@ -1,3 +1,14 @@
+# CountAppSolid
+## 概要
+内容はただのカウンターアプリ
+
+## 目的
+SolidJSをとりあえず触ってみたいがために作成したリポジトリ。
+
+Reactと似ているが、パフォーマンスが高いと言われているので
+
+興味がてらアプリを作成していき、理解を深める第一歩としたい。
+
 ## Usage
 
 Those templates dependencies are maintained via [pnpm](https://pnpm.io) via `pnpm up -Lri`.
