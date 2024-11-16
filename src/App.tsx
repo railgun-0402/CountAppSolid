@@ -1,26 +1,28 @@
-import type { Component } from 'solid-js';
+import { Component, createSignal } from "solid-js";
+import { Button } from "./components/Button";
 
-import logo from './logo.svg';
-import styles from './App.module.css';
+const [count, setCount] = createSignal<number>(0);
+
+const increments = () => {
+  setCount((count) => count + 1);
+};
+
+const decrements = () => {
+  setCount((count) => count - 1);
+};
 
 const App: Component = () => {
   return (
-    <div class={styles.App}>
-      <header class={styles.header}>
-        <img src={logo} class={styles.logo} alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          class={styles.link}
-          href="https://github.com/solidjs/solid"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn Solid
-        </a>
-      </header>
-    </div>
+    <>
+      <div class="bg-white rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl max-w-xl mx-auto mt-8">
+        <h1 class="text-6xl text-center">Counter</h1>
+        <div class="text-center my-5 text-9xl">{count()}</div>
+        <div class="grid grid-flow-col justify-stretch">
+          <Button text="-" action={decrements} />
+          <Button text="+" action={increments} />
+        </div>
+      </div>
+    </>
   );
 };
 
